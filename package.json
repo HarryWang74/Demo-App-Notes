@@ -1,0 +1,23 @@
+{
+  "name": "demo-app-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryWang74/Demo-App-Notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarryWang74/Demo-App-Notes/issues"
+  },
+  "homepage": "https://github.com/HarryWang74/Demo-App-Notes#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
