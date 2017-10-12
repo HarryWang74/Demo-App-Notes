@@ -14,7 +14,7 @@
           <th style="width: 25%; font-size: 1.5rem;">Steps</th>
           <th style="width: 25%">Angular 1.5x</th>
           <th style="width: 25%">Angular 4</th>
-          <th style="width: 25%">Notes</th>
+          <th style="width: 25%">React</th>
         </tr>
       </thead>
       <tbody>
@@ -22,9 +22,16 @@
         <tr>
           <th scope="row">
             <p class="display-4">01</p>
-            <blockquote class="blockquote">
-              <p class="mb-0">创建 application，app component, app module</p>
-            </blockquote>
+            <h5>创建 application，app component, app module</h5>
+            <div>
+              <ul>
+                <li>使用 CLI 自动创建 app module, app module, 方便很多</li>
+                <li>app module 定义</li>
+                <li>app component 定义</li>
+                <li>对比 App module</li>
+                <li>对比 App component</li>
+              </ul>
+            </div>
           </th>
           <td>
             <ol>
@@ -48,13 +55,7 @@
             </ol>
           </td>
           <td>
-            <ul>
-              <li>使用 CLI 自动创建 app module, app module, 方便很多</li>
-              <li>app module 定义</li>
-              <li>app component 定义</li>
-              <li>对比 App module</li>
-              <li>对比 App component</li>
-            </ul>
+
           </td>
         </tr>
 
@@ -62,9 +63,7 @@
         <tr>
           <th scope="row">
             <p class="display-4">02</p>
-            <blockquote class="blockquote">
-              <p class="mb-0">app module 加入 router, router 初始化设置，app compoent 加入 view</p>
-            </blockquote>
+            <h5>App module 加入 router, router 初始化设置，app component 加入 view</h5>
           </th>
           <td>
             <ol>
@@ -81,8 +80,19 @@
         <!-- 03 -->
         <tr>
           <th scope="row">
+            <p class="display-4">03</p>
+            <h5>创建 productList, 设置 router </h5>
           </th>
-          <td></td>
+          <td>
+            <ol>
+              <li>创建 products 文件夹</li>
+              <li>创建 products-list.html</li>
+              <li>创建 products-list.js</li>
+              <li>添加 product-list.js 到 index</li>
+              <li>在 app component 里设置 router </li>
+              <li>从模板复制 HTML</li>
+            </ol>
+          </td>
           <td></td>
           <td></td>
         </tr>
@@ -90,8 +100,213 @@
         <!-- 04 -->
         <tr>
           <th scope="row">
+            <p class="display-4">04</p>
+            <h5>创建 about, 设置 router </h5>
           </th>
+          <td>
+            <ol>
+              <li>创建 about.html</li>
+              <li>创建 about.js</li>
+              <li>在 index 里加入 about.js</li>
+              <li>在 app component 里设置 router</li>
+              <li>从模板复制 HTML</li>
+            </ol>
+          </td>
           <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 05 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">05</p>
+            <h5>创建 Global nav </h5>
+          </th>
+          <td>
+            <ol>
+              <li>从模板复制 HTML</li>
+              <li>使用 router 生成链接</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 06 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">06</p>
+            <h5>ProductList 用 Dummy data 显示产品信息</h5>
+          </th>
+          <td>
+            <ol>
+              <li>加入 dummy data</li>
+              <li>在页面里显示 dummy data</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 07 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">07</p>
+            <h5>ProductList 显示/隐藏产品图片</h5>
+          </th>
+          <td>
+            <ol>
+              <li>控制显示/隐藏产品图片的 flag</li>
+              <li>绑定 flag 到 img tag</li>
+              <li>定义 toggle flag function</li>
+              <li>绑定 toggle function 到 按钮</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 08 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">08</p>
+            <h5>productList 查询</h5>
+          </th>
+          <td>
+            <ol>
+              <li>空的查询字符串</li>
+              <li>双向绑定查询字符串到 Input</li>
+              <li>使用查询字符串过滤产品</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 09 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">09</p>
+            <h5>Productlist 从 API 读数据</h5>
+          </th>
+          <td>
+            <ol>
+              <li>创建 API 文件夹，加入 JSON 文件</li>
+              <li>创建 productService.js 加入到 index</li>
+              <li>Inject service 到 productList</li>
+              <li>在 service 里用 http 读数据</li>
+              <li>productLIst 从 service 读数据</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 10 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">10</p>
+            <h5>创建 rating component</h5>
+          </th>
+          <td>
+            <ol>
+              <li>创建 rating.html</li>
+              <li>创建 rating.js 加入 index</li>
+              <li>从模板复制 html</li>
+              <li>从模板复制 css</li>
+              <li>添加 component 到 productList</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 11 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">11</p>
+            <h5>rating component 空心星星显示 maxRate 实心星星显示 rate</h5>
+          </th>
+          <td>
+            <ol>
+              <li>设置 maxRate</li>
+              <li>空心星星显示 maxRate</li>
+              <li>hardcode rate</li>
+              <li>用实心星星显示 rate</li>
+              <li>点击星星，改变 rate</li>
+              <li>从 productList 传数据到 rating</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 12 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">12</p>
+            <h5>Rating 使用 API</h5>
+          </th>
+          <td>
+            <ol>
+              <li>inject productService 到 rating</li>
+              <li>service 发送数据到 API</li>
+              <li>在 component 里使用 service</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 13 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">13</p>
+            <h5>创建 productDetail 设置 router</h5>
+          </th>
+          <td>
+            <ol>
+              <li>创建 productList.html</li>
+              <li>创建 productList.js 加入 index</li>
+              <li>在 app component 里设置 route</li>
+              <li>productList 里生成到 detail 的 rooter link</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 14 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">14</p>
+            <h5>productDetail 从 API 读数据</h5>
+          </th>
+          <td>
+            <ol>
+              <li>productDetail 加入 router</li>
+              <li>从 URL 取 ID</li>
+              <li>inject serive 到 productDetail</li>
+              <li>service 用 ID 从 API 读数据</li>
+              <li>productDetail 初始化用 service 读数据</li>
+            </ol>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- 15 -->
+        <tr>
+          <th scope="row">
+            <p class="display-4">15</p>
+            <h5>productDetail 显示信息</h5>
+          </th>
+          <td>
+            <ol>
+              <li>显示产品信息</li>
+              <li>使用 rating</li>
+            </ol>
+          </td>
           <td></td>
           <td></td>
         </tr>
@@ -100,7 +315,7 @@
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwllivUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
