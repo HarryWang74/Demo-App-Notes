@@ -73,7 +73,17 @@
               <li>在 root component 里加入 view</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>在 index 里加入 baseURL</li>
+              <li>
+                在 app module 里导入 router
+              </li>
+              <li>
+                在 root component 里加入 view
+              </li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -93,7 +103,18 @@
               <li>从模板复制 HTML</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>
+                创建 products 文件夹
+              </li>
+              <li>
+                用 CLI 创建 productList
+              </li>
+              <li>在 app component 里设置 router </li>
+              <li>从模板复制 HTML</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -112,7 +133,15 @@
               <li>从模板复制 HTML</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>
+                用 CLI 创建 about
+              </li>
+              <li>在 app component 里设置 router</li>
+              <li>从模板复制 HTML</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -128,7 +157,12 @@
               <li>使用 router 生成链接</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>从模板复制 HTML</li>
+              <li>使用 router 生成链接</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -144,7 +178,19 @@
               <li>在页面里显示 dummy data</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <li>
+              生成 interface
+            </li>
+            <li>
+              定义 interface
+            </li>
+            <li>
+              导入 interface 到 producrList
+            </li>
+            <li>加入 dummy data</li>
+            <li>在页面里显示 dummy data</li>
+          </td>
           <td></td>
         </tr>
 
@@ -162,7 +208,14 @@
               <li>绑定 toggle function 到 按钮</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>控制显示/隐藏产品图片的 flag</li>
+              <li>绑定 flag 到 img tag</li>
+              <li>定义 toggle flag function</li>
+              <li>绑定 toggle function 到 按钮</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -179,7 +232,36 @@
               <li>使用查询字符串过滤产品</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>空的查询字符串</li>
+              <li>双向绑定查询字符串到 Input
+                <ul>
+                  <li>
+                    导入 formModule 到 app module
+                  </li>
+                  <li>
+                    把 filter 跟 input 关联
+                  </li>
+                </ul>
+              </li>
+              <li>
+                自定义查询 pipe
+                <ul>
+                  <li>
+                    创建 pipe
+                  </li>
+                  <li>
+                    导入 interface 到 pipe
+                  </li>
+                  <li>
+                    查询逻辑
+                  </li>
+                </ul>
+              </li>
+              <li>使用查询字符串过滤产品</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -198,7 +280,18 @@
               <li>productLIst 从 service 读数据</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>创建 API 文件夹，加入 JSON 文件</li>
+              <li>创建 productService</li>
+              <li>
+                在 root component 里注册 service
+              </li>
+              <li>Inject service 到 productList</li>
+              <li>在 service 里用 http 读数据</li>
+              <li>productLIst 从 service 读数据</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -217,7 +310,14 @@
               <li>添加 component 到 productList</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>用 CLI 创建 rating</li>
+              <li>从模板复制 html</li>
+              <li>从模板复制 css</li>
+              <li>添加 component 到 productList</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -237,7 +337,16 @@
               <li>从 productList 传数据到 rating</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>设置 maxRate</li>
+              <li>空心星星显示 maxRate</li>
+              <li>hardcode rate</li>
+              <li>用实心星星显示 rate</li>
+              <li>点击星星，改变 rate</li>
+              <li>从 productList 传数据到 rating</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -254,7 +363,14 @@
               <li>在 component 里使用 service</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>inject productService 到 rating</li>
+              <li>实例化 productService</li>
+              <li>service 发送数据到 API</li>
+              <li>在 component 里使用 service</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -270,9 +386,16 @@
               <li>创建 productList.js 加入 index</li>
               <li>在 app component 里设置 route</li>
               <li>productList 里生成到 detail 的 rooter link</li>
+              <li>复制 HTML</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>用 CLI 创建 productList.html</li>
+              <li>在 app component 里设置 route</li>
+              <li>复制 HTML</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -291,7 +414,15 @@
               <li>productDetail 初始化用 service 读数据</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>productDetail 加入 router</li>
+              <li>从 URL 取 ID</li>
+              <li>inject serive 到 productDetail</li>
+              <li>service 用 ID 从 API 读数据</li>
+              <li>productDetail 初始化用 service 读数据</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
 
@@ -307,7 +438,12 @@
               <li>使用 rating</li>
             </ol>
           </td>
-          <td></td>
+          <td>
+            <ol>
+              <li>显示产品信息</li>
+              <li>使用 rating</li>
+            </ol>
+          </td>
           <td></td>
         </tr>
       </tbody>
