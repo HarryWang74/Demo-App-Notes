@@ -1,0 +1,16 @@
+https://github.com/johnpapa/lite-server
+
+初始化 npm 项目，创建 package.json
+  npm init
+
+安装服务器
+  npm install lite-server --save-dev
+
+加入运行代码
+  在 package.json 的 script 部分加入
+  "scripts": {
+      "dev": "lite-server"
+  },
+
+运行 http server
+  npm run dev

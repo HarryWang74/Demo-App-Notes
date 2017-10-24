@@ -1,0 +1,2 @@
+// 1.6 后改变了 http promise 的写法，先用 1.5
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>

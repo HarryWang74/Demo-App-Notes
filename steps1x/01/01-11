@@ -1,0 +1,13 @@
+在 app.js 里加入
+
+angular.module('myApp').component('app', {
+    templateUrl: "app.html",
+    controllerAs: "ctrl",
+    controller: [function(){
+        var ctrl = this;
+
+        ctrl.$onInit = function () {
+
+        };
+    }],
+});

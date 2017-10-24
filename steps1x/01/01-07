@@ -1,0 +1,9 @@
+angular.module('myApp', []);
+// convert componet to HTML5 component
+// requireBase need set to false. Otherwise need set base="" in index
+angular.module('myApp').config(function($locationProvider) {
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
+})
