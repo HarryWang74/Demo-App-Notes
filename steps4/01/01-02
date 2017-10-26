@@ -1,0 +1,6 @@
+ng new [projectName]
+* 在 repo 文件夹外运行 angular CLI, projectName = repo name 这样可以完全更新 repo
+
+ng serve
+* 运行项目
+* 访问 http://localhost:4200/
