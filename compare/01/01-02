@@ -1,0 +1,29 @@
+比较创建 app module
+  angular1.5
+    angular.module('myApp', []);
+    // convert componet to HTML5 component
+    // requireBase need set to false. Otherwise need set base="" in index
+    angular.module('myApp').config(function($locationProvider) {
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+    })
+
+  angular4
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+
+    import { AppComponent } from './app.component';
+
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }

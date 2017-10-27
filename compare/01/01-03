@@ -1,0 +1,25 @@
+比较创建 app component
+  angular1.5
+    angular.module('myApp').component('app', {
+        templateUrl: "app.html",
+        controllerAs: "ctrl",
+        controller: [function(){
+            var ctrl = this;
+
+            ctrl.$onInit = function () {
+
+            };
+        }],
+    });
+
+  angular4
+    import { Component } from '@angular/core';
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+      title = 'app';
+    }

@@ -1,0 +1,5 @@
+比较创建项目
+  angular1.5x
+    需要手动创建 js 和 html，保证 js 被手动或自动添加到 index
+  angular4
+    使用 CLI 后容易多了
