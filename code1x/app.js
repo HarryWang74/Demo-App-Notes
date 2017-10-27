@@ -1,4 +1,4 @@
-angular.module('myApp', []);
+angular.module('myApp', ['ngComponentRouter']);
 // convert componet to HTML5 component
 // requireBase need set to false. Otherwise need set base="" in index
 angular.module('myApp').config(function($locationProvider) {
@@ -7,6 +7,7 @@ angular.module('myApp').config(function($locationProvider) {
         requireBase: false
     });
 })
+angular.module('myApp').value('$routerRootComponent', 'app')
 
 angular.module('myApp').component('app', {
     templateUrl: "app.html",

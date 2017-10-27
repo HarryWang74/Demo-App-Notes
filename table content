@@ -10,32 +10,6 @@
         </tr>
       </thead>
       <tbody>
-        <!-- 01 -->
-        <tr>
-          <th scope="row">
-            <p class="display-4">01</p>
-            <h5>创建 application，app component, app module</h5>
-            <div>
-              <ul>
-                <li>使用 CLI 自动创建 app module, app module, 方便很多</li>
-                <li>app module 定义</li>
-                <li>app component 定义</li>
-                <li>对比 App module</li>
-                <li>对比 App component</li>
-              </ul>
-            </div>
-          </th>
-          <td>
-
-          </td>
-          <td>
-
-          </td>
-          <td>
-
-          </td>
-        </tr>
-
         <!-- 02 -->
         <tr>
           <th scope="row">

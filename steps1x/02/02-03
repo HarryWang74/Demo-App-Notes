@@ -1,0 +1,13 @@
+angular.module('myApp').value('$routerRootComponent', 'app')
+
+angular.module('myApp').component('app', {
+    templateUrl: "app.html",
+    controllerAs: "ctrl",
+    controller: [function(){
+        var ctrl = this;
+
+        ctrl.$onInit = function () {
+
+        };
+    }],
+});
