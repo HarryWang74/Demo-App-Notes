@@ -1,0 +1,5 @@
+比较在 app component 里加入 view
+  Angular1.5
+    <ng-outlet></ng-outlet>
+  Angular4
+    <router-outlet></router-outlet>

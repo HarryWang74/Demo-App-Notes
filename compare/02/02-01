@@ -1,0 +1,38 @@
+比较 router 初始化
+  Angular1.5
+    // app module 加入 router
+    angular.module('myApp', ['ngComponentRouter']);
+
+    // router 时指定 app component 作为 root
+    angular.module('myApp').value('$routerRootComponent', 'app')
+
+    angular.module('myApp').component('app', {
+        templateUrl: "app.html",
+        controllerAs: "ctrl",
+        controller: [function(){
+            var ctrl = this;
+
+            ctrl.$onInit = function () {
+
+            };
+        }],
+    });
+
+  Angular4
+    // 只需要加入 router
+    // 加入
+    import { RouterModule } from '@angular/router';
+
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        // 加入
+        RouterModule.forRoot([
+        ]),
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
