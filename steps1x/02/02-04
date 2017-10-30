@@ -1,1 +1,4 @@
-<ng-outlet></ng-outlet>
+<div class="container">
+    <h1 class="col-md-12">My App</h1>
+    <ng-outlet></ng-outlet>
+</div>
