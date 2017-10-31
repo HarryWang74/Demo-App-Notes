@@ -1,0 +1,37 @@
+比较设置 child component 路径
+  angular1.5
+    // 在 app component 里设置路径
+    angular.module('myApp').component('app', {
+        templateUrl: "app.html",
+        controllerAs: "ctrl",
+        controller: [function(){
+            var ctrl = this;
+
+            ctrl.$onInit = function () {
+
+            };
+        }],
+        $routeConfig: [
+            { path: "/code1x", component: "productsList", name: "ProductsList", useAsDefault: true  },
+            { path: "/**", redirectTo: ["ProductsList"] }
+        ],
+    });
+  angular4
+    // 在 app module 里设置路径
+    @NgModule({
+      declarations: [
+        AppComponent,
+        ProductListComponent
+      ],
+      imports: [
+        BrowserModule,
+        RouterModule.forRoot([
+          { path: 'products', component: ProductListComponent },
+          { path: '', redirectTo: 'products', pathMatch: 'full' },
+          { path: '**', redirectTo: 'products', pathMatch: 'full' }
+        ]),
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }

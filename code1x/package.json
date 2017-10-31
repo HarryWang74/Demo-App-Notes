@@ -1,0 +1,14 @@
+{
+  "name": "code1x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "about.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
