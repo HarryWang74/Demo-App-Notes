@@ -1,0 +1,5 @@
+比较生成 rooter link
+  Angular1.5
+    <a class="nav-link" ng-link="['About']">About us</a>
+  Angular4
+    <a class="nav-link" [routerLink]="['/about']">About us</a>
