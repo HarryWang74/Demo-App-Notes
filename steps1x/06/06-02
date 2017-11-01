@@ -1,0 +1,16 @@
+<div class="col-md-3" ng-repeat="product in ctrl.products">
+    <div class="card">
+      <img class="card-img-top img-fluid" src="{{product.imageUrl}}" style="height: 20rem;">
+      <div class="card-block">
+        <h4 class="card-title">{{product.productName}}</h4>
+        <p class="card-text">{{product.price | currency}}</p>
+        <div>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+</div>
