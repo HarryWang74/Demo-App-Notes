@@ -13,7 +13,10 @@
   <div class="row">
       <div class="col-md-3" ng-repeat="product in ctrl.products">
           <div class="card">
-            <img class="card-img-top img-fluid" src="{{product.imageUrl}}" style="height: 20rem;">
+            <img class="card-img-top img-fluid" 
+                  src="{{product.imageUrl}}" 
+                  style="height: 20rem;"
+                  ng-if="ctrl.showImage">
             <div class="card-block">
               <h4 class="card-title">{{product.productName}}</h4>
               <p class="card-text">{{product.price | currency}}</p>
@@ -27,4 +30,10 @@
             </div>
           </div>
       </div>
+  </div>
+
+  <div class="row" style="margin-top: 2rem;">
+    <div class="col-md-12 text-right">
+      <button type="button" class="btn btn-primary" ng-click="ctrl.toggleImage()">{{ ctrl.showImage ? "Hide images" : "Show images" }}</button>
+    </div>
   </div>

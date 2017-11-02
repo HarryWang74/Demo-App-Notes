@@ -1,0 +1,4 @@
+<img class="card-img-top img-fluid"
+      src="{{product.imageUrl}}"
+      style="height: 20rem;"
+      ng-if="ctrl.showImage">

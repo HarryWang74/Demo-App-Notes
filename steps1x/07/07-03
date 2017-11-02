@@ -1,0 +1,3 @@
+ctrl.toggleImage = function(){
+    ctrl.showImage = !ctrl.showImage;
+}
