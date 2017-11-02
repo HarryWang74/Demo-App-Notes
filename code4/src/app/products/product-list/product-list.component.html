@@ -13,7 +13,10 @@
 <div class="row">
         <div class="col-md-3" *ngFor='let product of products'>
           <div class="card">
-            <img class="card-img-top img-fluid" src={{product.imageUrl}} style="height: 20rem;">
+            <img class="card-img-top img-fluid"
+            src={{product.imageUrl}}
+            style="height: 20rem;"
+            *ngIf='showImage'>
             <div class="card-block">
               <h4 class="card-title">{{ product.productName }}</h4>
               <p class="card-text">{{ product.price | currency: 'USD':true: '1.2-2'}}</p>
@@ -28,4 +31,12 @@
           </div>
       </div>
     
+</div>
+
+<div class="row">
+  <div class="col-md-12 text-right">
+    <button class='btn btn-primary'(click)='toggleImage()'>
+      {{showImage ? 'hide image': 'show image'}}
+    </button>
+  </div>
 </div>
