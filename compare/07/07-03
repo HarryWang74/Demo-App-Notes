@@ -1,0 +1,10 @@
+比较定义 function
+  angular1.5
+    ctrl.toggleImage = function(){
+        ctrl.showImage = !ctrl.showImage;
+    }
+  angular4
+    // strong type 要用到 :void, 不用绑到 this
+    toggleImage(): void{
+      this.showImage = !this.showImage;
+    }

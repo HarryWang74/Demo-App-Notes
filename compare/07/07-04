@@ -1,0 +1,9 @@
+比较应用 ngClick
+  angular1.5
+    <button ng-click="ctrl.toggleImage()">
+      {{ ctrl.showImage ? "Hide images" : "Show images" }}
+    </button>
+  angular4
+    <button (click)='toggleImage()'>
+      {{showImage ? 'hide image': 'show image'}}
+    </button>

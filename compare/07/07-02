@@ -1,0 +1,5 @@
+比较应用 ngIf 到 img
+  angular1.5
+    <img ng-if="ctrl.showImage">
+  angular4
+    <img *ngIf='showImage'>

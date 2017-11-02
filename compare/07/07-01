@@ -1,0 +1,6 @@
+比较定义 flag
+  Angular1.5
+    ctrl.showImage = false;
+  Angular4
+    // 需要 strong type, 不用绑到 this 上
+    showImage: boolean = false;
