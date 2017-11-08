@@ -1,0 +1,8 @@
+比较双向绑定
+  angular1.5
+    // 直接使用 ng-model
+    <input ng-model="ctrl.productFilter">
+  angular4
+    // 要现在 app module 里导入 FormsModule 才能使用 ngModel
+    import { FormsModule } from '@angular/forms';
+    <input type='text' [(ngModel)]='productsFilter' />

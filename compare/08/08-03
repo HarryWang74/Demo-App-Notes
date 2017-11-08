@@ -1,0 +1,6 @@
+比较使用 filter
+  angular1.5
+  <div ng-repeat="product in ctrl.products  | filter : ctrl.productFilter">
+
+  angular4
+  <div *ngFor='let product of products | productFilter: productsFilter'>

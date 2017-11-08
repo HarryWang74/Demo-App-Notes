@@ -1,0 +1,8 @@
+比较定义 filter
+  angular1.5
+  // search 可以直接使用
+  <div ng-repeat="product in ctrl.products  | filter : ctrl.productFilter">
+
+  angular4
+  // 要定义 pipe 加入 逻辑
+  见具体步骤
