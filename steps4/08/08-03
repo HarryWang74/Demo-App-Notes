@@ -1,0 +1,2 @@
+在页面里 {{productsFilter}}，应该可以和input 同步实现 2 way binding
+<input type='text' [(ngModel)]='productsFilter' />

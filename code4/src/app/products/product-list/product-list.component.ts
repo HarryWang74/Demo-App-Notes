@@ -25,6 +25,7 @@ export class ProductListComponent implements OnInit {
     },
   ];
   showImage: boolean = false;
+  productsFilter: string = "";
   constructor() { }
 
   ngOnInit() {
