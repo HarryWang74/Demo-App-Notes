@@ -1,0 +1,1 @@
+  <div class="col-md-3" ng-repeat="product in ctrl.products  | filter : ctrl.productFilter">

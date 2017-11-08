@@ -6,12 +6,12 @@
     style="margin: 2rem 0rem; border-top: 1px solid #eee; padding-top: 1rem;  border-bottom: 1px solid #eee; padding-bottom: 1rem;">
     <label for="inputEmail3" class="col-sm-1 col-form-label">Filter by</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" placeholder="Product Name">
+      <input type="text" class="form-control" ng-model="ctrl.productFilter" placeholder="Product Name">
     </div>
   </div>
 
   <div class="row">
-      <div class="col-md-3" ng-repeat="product in ctrl.products">
+      <div class="col-md-3" ng-repeat="product in ctrl.products  | filter : ctrl.productFilter">
           <div class="card">
             <img class="card-img-top img-fluid" 
                   src="{{product.imageUrl}}" 
