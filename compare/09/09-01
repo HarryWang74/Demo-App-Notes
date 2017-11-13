@@ -1,0 +1,24 @@
+比较创建 productService
+  angular1.5
+    // 手动创建，添加 js 到 index
+    angular.module('myApp').factory('productsService', [function () {
+        var productsService = {};
+        return productsService;
+    }]);
+
+  angular4
+    // 用 CLI 创建
+    ng generate service product
+
+    // 在 app component 里需要作为 provider 注册
+    import { Component } from '@angular/core';
+    import { ProductService } from './products/product.service';
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css'],
+      providers: [ProductService]
+    })
+    export class AppComponent {
+      title = 'app';
+    }

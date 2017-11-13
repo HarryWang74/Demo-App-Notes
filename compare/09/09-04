@@ -1,0 +1,36 @@
+比较productService 用 http 读数据
+  angular1.5
+    productsService.getProductsInfo = function(){
+        return $q(function (success, error) {
+            $http.get('/api/productsInfo.json')
+            .success(function (data, status, headers, config) {
+                success(data);
+                console.log(data);
+            })
+            .error(function (data, status, headers, config) {
+                console.log(data)
+                error(data);
+            });
+        });
+    }
+  angular4
+    // 在 service 里实例化 http
+    constructor(private _http: Http) { }
+
+    // 在 service 里定义 serverURL
+    private _productUrl = 'api/products.json';
+
+    // 用 http 读数据，包括 error handling
+    getProducts(): Observable<IProduct[]> {
+      return this._http.get(this._productUrl)
+          .map((response: Response) => <IProduct[]> response.json())
+          .do(data => console.log('All: ' +  JSON.stringify(data)))
+          .catch(this.handleError);
+    }
+
+    private handleError(error: Response) {
+      // in a real world app, we may send the server to some remote logging infrastructure
+      // instead of just logging it to the console
+      console.error(error);
+      return Observable.throw(error.json().error || 'Server error');
+    }

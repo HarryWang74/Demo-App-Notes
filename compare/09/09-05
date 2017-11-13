@@ -1,0 +1,27 @@
+productList 从 service 读数据
+  angular1.5
+    ctrl.$onInit = function () {
+         productsService.getProductsInfo().then(
+             function (success) {
+                 ctrl.products = success;
+                 console.log(success);
+             },
+             function (error) {
+                 console.log(error);
+             }
+         );
+     };
+  angular4
+    //实例化 productService
+    constructor(private _productService: ProductService) {};
+
+    //定义 errorMessage
+    errorMessage: string;
+
+    //读数据
+    ngOnInit() {
+      this._productService.getProducts().subscribe(
+        products =>this.products = products,
+        error => this.errorMessage = <any>error
+      );
+    }

@@ -1,0 +1,27 @@
+比较导入 http library 到 productService
+  angular1.5
+    // 手动创建，添加 js 到 index
+    angular.module('myApp').factory('productsService', ['$http', '$q', function ($http, $q) {
+      var productsService = {};
+      return productsService;
+    }]);
+
+  angular4
+    // 导入 interface
+    import { IProduct } from './i-product'
+
+    // 加入 Http module 到 app module
+    import{ HttpModule } from '@angular/http';
+    imports: [
+      BrowserModule,
+      FormsModule,
+      HttpModule
+    ]
+
+    // 导入 library
+    import { Http, Response } from '@angular/http';
+    import { Observable } from 'rxjs/Observable';
+    import 'rxjs/add/operator/do';
+    import 'rxjs/add/operator/catch';
+    import 'rxjs/add/operator/map';
+    import 'rxjs/add/observable/throw';

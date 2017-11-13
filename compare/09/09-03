@@ -1,0 +1,7 @@
+比较导入 productService 到 productList
+  angular1.5
+    controller: ['productsService', function(productsService){
+      ...
+    }
+  angular4
+    import { ProductService } from '../product.service';
