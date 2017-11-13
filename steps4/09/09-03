@@ -1,0 +1,8 @@
+设置 CLI，publish API data
+  项目根目录下打开 angular-cli.json
+  把 API 文件夹添加到编译目录
+  "assets": [
+      "assets",
+      "api",
+      "favicon.ico"
+    ],
