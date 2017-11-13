@@ -41,9 +41,11 @@
         <div class="col-sm-3 py-4">
           <h3>09 <br>按名称查询</h3>
           <ul>
-            <li>比较创建/定义 service</li>
-            <li>比较注册/导入 service</li>
-            <li>比较用 service 读数据</li>
+            <li>比较创建 productService</li>
+            <li>比较导入 http library 到 productService</li>
+            <li>比较导入 productService 到 productList</li>
+            <li>比较productService 用 http 读数据</li>
+            <li>比较productList 用 productService 读数据</li>
           </ul>
         </div>
         <div class="col-sm-3 py-4 leftBorder">
@@ -51,6 +53,7 @@
             <li>创建 API 文件夹</li>
             <li><a href="steps1x/09/api.rar" target="_blank">添加 JSON 文件</a></li>
             <li><a href="steps1x/09/09-03" target="_blank">创建 productService.js</a></li>
+            <li><a href="steps1x/09/09-08" target="_blank">导入 http library 到 productService</a></li>
             <li><a href="steps1x/09/09-04" target="_blank">添加 productService.js 到 index</a></li>
             <li><a href="steps1x/09/09-05" target="_blank">导入 service 到 productList</a></li>
             <li><a href="steps1x/09/09-06" target="_blank">service 用 http 读数据</a></li>
@@ -62,14 +65,24 @@
             <li><a href="steps4/09/09-01" target="_blank">创建 API 文件夹</a></li>
             <li><a href="steps4/09/api.rar" target="_blank">添加 JSON 文件</a></li>
             <li><a href="steps4/09/09-03" target="_blank">修改 app config，允许编译添加的 JSON</a></li>
-            <li><a href="steps4/09/09-04" target="_blank">创建 productService.js</a></li>
-            <li><a href="steps4/09/09-05" target="_blank">导入 interface 到 productService</a></li>
+            <li>
+              创建 productService.js
+              <ul>
+                <li><a href="steps4/09/09-04" target="_blank">用 CLI 创建 productService</a></li>
+              </ul>
+            </li>
+            <li>
+              导入要用到的 library
+              <ul>
+                <li><a href="steps4/09/09-05" target="_blank">导入 interface 到 productService</a></li>
+                <li><a href="steps4/09/09-08" target="_blank">加入 Http module 到 app module</a></li>
+                  <li><a href="steps4/09/09-09" target="_blank">导入所有要用到的 library 到 service</a></li>
+              </ul>
+            </li>
             <li><a href="steps4/09/09-06" target="_blank">在 app component 里注册 productService 作为 provider</a></li>
             <li><a href="steps4/09/09-07" target="_blank">导入 productService 到 productList</a></li>
             <li>productService 用 http 读数据
               <ul>
-                <li><a href="steps4/09/09-08" target="_blank">加入 Http module 到 app module</a></li>
-                <li><a href="steps4/09/09-09" target="_blank">导入所有要用到的 library 到 service</a></li>
                 <li><a href="steps4/09/09-10" target="_blank">在 service 里实例化 http</a></li>
                 <li><a href="steps4/09/09-11" target="_blank">在 service 里定义 serverURL</a></li>
                 <li><a href="steps4/09/09-12" target="_blank">用 http 读数据</a></li>

@@ -1,4 +1,4 @@
-angular.module('myApp').factory('productsService', ['$http', '$q', function ($http, $q) {
+angular.module('myApp').factory('productsService', [function () {
     var productsService = {};
     return productsService;
 }]);
