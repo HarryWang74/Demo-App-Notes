@@ -1,0 +1,25 @@
+.rating .starWrapper{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+.rating .starWrapper:hover{
+    cursor: pointer;
+}
+.rating .starWrapper .fa-star-o{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.rating .starWrapper .fa-star{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.fa-star{
+    display: none;
+}
+.showStar .fa-star{
+    display: inline-block;
+}

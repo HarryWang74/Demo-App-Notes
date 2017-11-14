@@ -8,13 +8,15 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { ProductFilterPipe } from './products/product-filter.pipe';
+import { RatingComponent } from './products/rating/rating.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     AboutComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
