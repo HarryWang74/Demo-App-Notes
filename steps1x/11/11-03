@@ -1,0 +1,6 @@
+// track by $index 接受相同元素
+<div class="rating">
+    <div class="starWrapper" ng-repeat="rating in ctrl.getMaxRating() track by $index">
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+</div>

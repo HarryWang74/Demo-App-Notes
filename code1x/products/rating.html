@@ -1,9 +1,37 @@
 <div class="rating">
-    <div class="starWrapper">
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star" aria-hidden="true"></i>
-      <i class="fa fa-star-o" aria-hidden="true"></i>
-      <i class="fa fa-star-o" aria-hidden="true"></i>
+    <div class="starWrapper"
+    ng-repeat="rating in ctrl.getMaxRating() track by $index"
+    ng-class="{ 'showStar': ctrl.rating >= $index + 1}"
+    ng-click="ctrl.changeRating($index)">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
     </div>
-  </div>
+</div>
+
+<style>
+.rating .starWrapper{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+.rating .starWrapper:hover{
+    cursor: pointer;
+}
+.rating .starWrapper .fa-star-o{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.rating .starWrapper .fa-star{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.fa-star{
+    display: none;
+}
+.showStar .fa-star{
+    display: inline-block;
+}
+</style>

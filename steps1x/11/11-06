@@ -1,0 +1,3 @@
+ctrl.changeRating = function(index){
+    ctrl.rating = index + 1;
+}

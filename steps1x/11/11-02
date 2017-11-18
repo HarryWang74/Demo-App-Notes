@@ -1,0 +1,5 @@
+// ng-repeat 只接受 array 和 object, 要单写 return function
+ctrl.maxRating = 5;
+ctrl.getMaxRating = function(){
+    return new Array(ctrl.maxRating);
+}

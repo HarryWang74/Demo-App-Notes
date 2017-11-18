@@ -1,0 +1,7 @@
+// 确保 parent 数据改变时，rating 数据也会改变
+ctrl.$onChanges = function (changes) {
+    console.log(changes);
+    if (typeof (changes.rating) != "undefined" && typeof (changes.rating.currentValue) != "undefined") {
+        ctrl.rating = changes.rating.currentValue;
+    }
+}
