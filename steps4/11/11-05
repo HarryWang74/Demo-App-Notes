@@ -1,8 +1,7 @@
 <div class="rating">
   <div class="starWrapper"
   *ngFor='let iRate of getMaxRating(); let i = index;'
-  [ngClass]="{'showStar': rate >= i + 1}"
-  (click)='changeRate(i)'>
+  [ngClass]="{'showStar': rate >= i + 1}">
     <i class="fa fa-star-o" aria-hidden="true"></i>
     <i class="fa fa-star" aria-hidden="true"></i>
   </div>

@@ -1,0 +1,4 @@
+// ngFor 只接受 array 和 object, 要单写 return function
+getMaxRating = function(){
+  return new Array(this.maxRating);
+}

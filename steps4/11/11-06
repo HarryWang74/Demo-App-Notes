@@ -1,0 +1,3 @@
+changeRate = function(index){
+  this.rate = index + 1;
+}

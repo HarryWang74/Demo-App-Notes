@@ -1,0 +1,5 @@
+<div class="rating">
+  <div class="starWrapper" *ngFor='let rate of getMaxRating()'>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+  </div>
+</div>
