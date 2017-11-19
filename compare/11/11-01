@@ -1,0 +1,16 @@
+比较绑定变量到 component
+  angular1.5
+    // 在 component 里设置要绑定的变量
+    bindings:{
+      rating: '<'
+    },
+    // 绑定变量到 component
+    <rating rating=product.rating></rating>
+
+  angular4
+    // 导入 input 到 component
+    import { Component, OnInit, Input } from '@angular/core';
+    // 在 component 里设置要绑定的变量
+    @Input() rate: number;
+    // 绑定变量到 component
+    <app-rating [rate]=product.rating></app-rating>
