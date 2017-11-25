@@ -1,0 +1,7 @@
+changeRate = function(index){
+  this.rate = index + 1;
+  this._productService.setRate(this.rate, this.id).subscribe(
+    rate =>this.rate = rate,
+    error => this.errorMessage = <any>error
+  );
+}

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, Headers, RequestOptions } from '@angular/http'
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
@@ -16,6 +16,15 @@ export class ProductService {
     return this._http.get(this._productUrl)
         .map((response: Response) => <IProduct[]> response.json())
         .do(data => console.log('All: ' +  JSON.stringify(data)))
+        .catch(this.handleError);
+  }
+
+  setRate(rate, id): Observable<IProduct[]> {
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+    return this._http.post("api/product/" + id + "/" + rate, options)
+        .map((response: Response) => <IProduct[]> response.json())
+        .do(data => console.log('update: ' +  JSON.stringify(data)))
         .catch(this.handleError);
   }
 

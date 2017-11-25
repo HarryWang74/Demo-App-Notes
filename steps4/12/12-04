@@ -1,0 +1,2 @@
+@Input() rate: number;
+@Input() id: number;

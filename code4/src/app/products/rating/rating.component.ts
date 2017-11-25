@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { ProductService } from '../product.service';
 @Component({
   selector: 'app-rating',
   templateUrl: './rating.component.html',
@@ -7,9 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RatingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _productService: ProductService) {};
   maxRating:number = 5;
   @Input() rate: number;
+  @Input() id: number;
   ngOnInit() {
   }
 
@@ -19,5 +20,9 @@ export class RatingComponent implements OnInit {
 
   changeRate = function(index){
     this.rate = index + 1;
+    this._productService.setRate(this.rate, this.id).subscribe(
+      rate =>this.rate = rate,
+      error => this.errorMessage = <any>error
+    );
   }
 }

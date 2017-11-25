@@ -1,0 +1,8 @@
+setRate(rate, id): Observable<IProduct[]> {
+  let headers = new Headers({ 'Content-Type': 'application/json' });
+  let options = new RequestOptions({ headers: headers });
+  return this._http.post("api/product/" + id + "/" + rate, options)
+      .map((response: Response) => <IProduct[]> response.json())
+      .do(data => console.log('update: ' +  JSON.stringify(data)))
+      .catch(this.handleError);
+}

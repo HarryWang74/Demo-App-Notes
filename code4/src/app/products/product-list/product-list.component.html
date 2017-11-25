@@ -20,7 +20,7 @@
             <div class="card-block">
               <h4 class="card-title">{{ product.productName }}</h4>
               <p class="card-text">{{ product.price | currency: 'USD':true: '1.2-2'}}</p>
-              <app-rating [rate]=product.rating></app-rating>
+              <app-rating [rate]=product.rating [id]=product.productId></app-rating>
             </div>
           </div>
       </div>
