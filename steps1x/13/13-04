@@ -1,0 +1,8 @@
+$routeConfig: [
+    { path: "/", component: "productsList", name: "ProductsList", useAsDefault: true  },
+    { path: "/about", component: "about", name: "About" },
+    { path: "/product/:id", component: "productDetail", name: "ProductDetail" },
+    { path: "/**", redirectTo: ["ProductsList"] }
+],
+
+// 存在优先级问题，要加在 { path: "/**", redirectTo: ["ProductsList"] } 前面
