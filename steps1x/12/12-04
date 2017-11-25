@@ -1,0 +1,11 @@
+ctrl.changeRating = function(index){
+    ctrl.rating = index + 1;
+    productsService.changeRating(ctrl.productid, ctrl.rating).then(
+        function (success) {
+            console.log(success);
+        },
+        function (error) {
+            console.log(error);
+        }
+    );
+}

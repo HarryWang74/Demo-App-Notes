@@ -2,9 +2,10 @@ angular.module('myApp').component('rating', {
     templateUrl: "/products/rating.html",
     controllerAs: "ctrl",
     bindings:{
+      productid: '<',
       rating: '<'
     },
-    controller: [function(){
+    controller: ['productsService', function(productsService){
         var ctrl = this;
 
         ctrl.maxRating = 5;
@@ -18,6 +19,14 @@ angular.module('myApp').component('rating', {
 
         ctrl.changeRating = function(index){
             ctrl.rating = index + 1;
+            productsService.changeRating(ctrl.productid, ctrl.rating).then(
+                function (success) {
+                    console.log(success);
+                },
+                function (error) {
+                    console.log(error);
+                }
+            );
         }
 
         ctrl.$onChanges = function (changes) {
