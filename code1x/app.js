@@ -10,7 +10,7 @@ angular.module('myApp').config(function($locationProvider) {
 angular.module('myApp').value('$routerRootComponent', 'app')
 
 angular.module('myApp').component('app', {
-    templateUrl: "app.html",
+    templateUrl: "/app.html",
     controllerAs: "ctrl",
     controller: [function(){
         var ctrl = this;

@@ -1,0 +1,3 @@
+ctrl.$routerOnActivate = function (next) {
+    ctrl.productId = parseInt(next.params.id);
+};

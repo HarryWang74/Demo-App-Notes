@@ -1,0 +1,15 @@
+ctrl.$routerOnActivate = function (next) {
+    ctrl.productId = parseInt(next.params.id);
+    loadData();
+};
+function loadData(){
+    productsService.getProductDetail(ctrl.productId).then(
+        function (success) {
+            ctrl.product = success;
+            console.log(success);
+        },
+        function (error) {
+            console.log(error);
+        }
+    );
+}
