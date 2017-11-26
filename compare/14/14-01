@@ -1,0 +1,24 @@
+比较从 URL 取 id
+  angular1.5
+    // 绑定 router 到 productDetail
+      bindings: {
+          "$router": "<",
+      },
+    // productDetail 初始化时，用 router 从 URL 取 id
+      ctrl.$routerOnActivate = function (next) {
+        ctrl.productId = parseInt(next.params.id);
+      };
+
+  angular4
+    // 导入 router 到 productDetail
+      import { ActivatedRoute } from '@angular/router';
+    // 实例化 router
+      constructor(private route: ActivatedRoute) {}
+    // 声明 id
+      productID: number;
+    // productDetail 初始化时，用 router 从 URL 取 id
+      ngOnInit() {
+        this.route.params.subscribe(params => {
+          this.productID = params['id'];
+        });
+      }
