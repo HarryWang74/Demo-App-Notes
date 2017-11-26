@@ -1,0 +1,9 @@
+RouterModule.forRoot([
+  { path: 'products', component: ProductListComponent },
+  { path: 'about', component: AboutComponent },
+  { path: '', redirectTo: 'products', pathMatch: 'full' },
+  { path: 'product/:id', component: ProductDetailComponent },
+  { path: '**', redirectTo: 'products', pathMatch: 'full' }
+]),
+
+// 存在优先级问题，要加在 { path: '**', redirectTo: 'products', pathMatch: 'full' } 前面

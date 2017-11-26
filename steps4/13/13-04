@@ -1,0 +1,5 @@
+<h4 class="card-title">
+   <a [routerLink]="['/product', product.productId]">
+     {{ product.productName }}
+   </a>
+ </h4>

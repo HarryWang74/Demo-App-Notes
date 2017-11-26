@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { ProductFilterPipe } from './products/product-filter.pipe';
 import { RatingComponent } from './products/rating/rating.component';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RatingComponent } from './products/rating/rating.component';
     ProductListComponent,
     AboutComponent,
     ProductFilterPipe,
-    RatingComponent
+    RatingComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { RatingComponent } from './products/rating/rating.component';
       { path: 'products', component: ProductListComponent },
       { path: 'about', component: AboutComponent },
       { path: '', redirectTo: 'products', pathMatch: 'full' },
+      { path: 'product/:id', component: ProductDetailComponent },
       { path: '**', redirectTo: 'products', pathMatch: 'full' }
     ]),
   ],
