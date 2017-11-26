@@ -1,15 +1,10 @@
 <div class="row">
-    <h1 class="col-md-12" style="margin-bottom: 2rem;">Product detail</h1>
-</div>
-
-<div class="row">
     <div class="col-md-8">
         <img class="card-img-top img-fluid" src="{{ctrl.product.imageUrl}}" style="height: 30rem;">
     </div>
     <div class="col-md-4">
         <h2 class="card-title">{{ctrl.product.productName}}</h4>
         <p class="card-text">{{ ctrl.product.price | currency }}</p>
-        <rating rating=ctrl.product.rating productid=ctrl.product.productId></rating>
         <div style="padding-top: 2rem;">
         <h3>Description</h3>
         <p>{{ ctrl.product.description }}</p>

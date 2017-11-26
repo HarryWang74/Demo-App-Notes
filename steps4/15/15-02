@@ -1,0 +1,1 @@
+<app-rating [rate]=product.rating [id]=product.productId></app-rating>
