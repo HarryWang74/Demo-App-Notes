@@ -34,4 +34,11 @@ export class ProductService {
     console.error(error);
     return Observable.throw(error.json().error || 'Server error');
   }
+
+  getDetail(id:number): Observable<IProduct[]> {
+    return this._http.get('api/' + id + '.json')
+        .map((response: Response) => <IProduct[]> response.json())
+        .do(data => console.log('detail: ' +  JSON.stringify(data)))
+        .catch(this.handleError);
+  }
 }

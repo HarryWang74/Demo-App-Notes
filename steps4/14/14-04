@@ -1,0 +1,9 @@
+ngOnInit() {
+  this.route.params.subscribe(params => {
+    // console.log(params) //log the entire params object
+    // console.log(params['id']) //log the value of id
+    this.productID = params['id'];
+    // console.log(this.productID);
+    // debugger;
+  });
+}
